@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+
+		<LangVersion>latest</LangVersion>
+
+		<!-- NuGet -->
+		<PackageId>FSharpSlowBuild</PackageId>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+
+		<!-- SourceLink -->
+		<!-- snupkg requires a symbol server, which Azure DevOps Artifacts does not currently support. Use nupkg with embedded .pdb.
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		-->
+		<DebugType>embedded</DebugType>
+		<EmbedAllSources>true</EmbedAllSources>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="CodeGen\CSharpHelper.fs" />
+	</ItemGroup>
+
+	<!-- When running in Azure DevOps Pipelines, enable deterministic builds for the NuGet package. -->
+	<PropertyGroup Condition="'$(TF_BUILD)' == 'true'">
+		<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+	</PropertyGroup>
+
+</Project>

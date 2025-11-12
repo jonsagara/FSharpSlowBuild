@@ -1,0 +1,27 @@
+<Project>
+	<PropertyGroup>
+
+		<TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
+		<LangVersion>14.0</LangVersion>
+		<Nullable>enable</Nullable>
+
+		<!-- NuGet -->
+		<Version>1.0.0</Version>
+		<AssemblyVersion>1.0.0</AssemblyVersion>
+		<FileVersion>1.0.0</FileVersion>
+		<Authors>Jon Sagara</Authors>
+		<Company>NoCo</Company>
+		<Copyright>Copyright 2025</Copyright>
+		<RepositoryType>git</RepositoryType>
+
+		<!-- Don't warn about public members with missing XML comments. -->
+		<NoWarn>1591;1701;1702</NoWarn>
+
+		<!-- 
+			This is really helpful for larger projects, but I leave it in anyway. Why build if you don't have to? 
+			
+			See: https://devblogs.microsoft.com/visualstudio/vs-toolbox-accelerate-your-builds-of-sdk-style-net-projects/
+		-->
+		<AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
+	</PropertyGroup>
+</Project>
