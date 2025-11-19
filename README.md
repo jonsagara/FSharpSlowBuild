@@ -9,7 +9,7 @@ but not yet released.
 
 ## [2025-11-19] Visual Studio 2026 18.0.1 / Visual Studio 2026 Insiders 11218.70
 
-`Visual F# Tools   18.0.0-rc2.25522.6+db81a081913bbaa32e528305723c07d98fd598b8`
+### `Visual F# Tools   18.0.0-rc2.25522.6+db81a081913bbaa32e528305723c07d98fd598b8`
 
 ```
 Rebuild started at 1:23 PM...
@@ -22,6 +22,24 @@ Restored C:\Dev\OPENSOURCE\FSharpSlowBuild\src\FSharpSlowBuild.Tests\FSharpSlowB
 2>------ Rebuild All started: Project: FSharpSlowBuild.Tests, Configuration: Debug Any CPU ------
 Build has been canceled.
 ========== Elapsed 01:33.950 minutes ==========
+```
+
+### Visual F# Tools   18.0.0-alpha1.25509.2+4c68fe8482b988ef088f0968bed73810c4178fc3 -- WORKS!!!
+
+```
+Rebuild started at 3:36 PM...
+1>------ Rebuild All started: Project: FSharpSlowBuild, Configuration: Debug Any CPU ------
+Restored C:\Dev\OPENSOURCE\FSharpSlowBuild\src\FSharpSlowBuild\FSharpSlowBuild.fsproj (in 563 ms).
+Restored C:\Dev\OPENSOURCE\FSharpSlowBuild\src\FSharpSlowBuild.Tests\FSharpSlowBuild.Tests.fsproj (in 570 ms).
+1>  FSharpSlowBuild -> C:\Dev\OPENSOURCE\FSharpSlowBuild\src\FSharpSlowBuild\bin\Debug\net9.0\FSharpSlowBuild.dll
+1>  FSharpSlowBuild -> C:\Dev\OPENSOURCE\FSharpSlowBuild\src\FSharpSlowBuild\bin\Debug\net10.0\FSharpSlowBuild.dll
+1>  FSharpSlowBuild -> C:\Dev\OPENSOURCE\FSharpSlowBuild\src\FSharpSlowBuild\bin\Debug\net8.0\FSharpSlowBuild.dll
+2>------ Rebuild All started: Project: FSharpSlowBuild.Tests, Configuration: Debug Any CPU ------
+2>  FSharpSlowBuild.Tests -> C:\Dev\OPENSOURCE\FSharpSlowBuild\src\FSharpSlowBuild.Tests\bin\Debug\net9.0\FSharpSlowBuild.Tests.dll
+2>  FSharpSlowBuild.Tests -> C:\Dev\OPENSOURCE\FSharpSlowBuild\src\FSharpSlowBuild.Tests\bin\Debug\net10.0\FSharpSlowBuild.Tests.dll
+2>  FSharpSlowBuild.Tests -> C:\Dev\OPENSOURCE\FSharpSlowBuild\src\FSharpSlowBuild.Tests\bin\Debug\net8.0\FSharpSlowBuild.Tests.dll
+========== Rebuild All: 2 succeeded, 0 failed, 0 skipped ==========
+========== Rebuild completed at 3:36 PM and took 04.328 seconds ==========
 ```
 
 
