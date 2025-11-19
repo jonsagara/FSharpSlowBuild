@@ -1,10 +1,46 @@
 ﻿# F# slow build in Visual Studio 2026
 
-When building my F# class library and unit tests in Visual Studio 2026 Insiders [11206.111], the build does not complete within a reasonable
+When building my F# class library and unit tests in Visual Studio 2026 (both GA and Insiders), the build does not complete within a reasonable
 amount of time. I stop waiting after a minute.
 
-There is a [GitHub Issue](https://github.com/dotnet/fsharp/issues/19073), and the problem may already be fixed according to the comments.
+There is a [GitHub Issue](https://github.com/dotnet/fsharp/issues/19073), and the problem may already be fixed according to the comments, 
+but not yet released.
 
+
+## [2025-11-19] Visual Studio 2026 18.0.1 / Visual Studio 2026 Insiders 11218.70
+
+`Visual F# Tools   18.0.0-rc2.25522.6+db81a081913bbaa32e528305723c07d98fd598b8`
+
+```
+Rebuild started at 1:23 PM...
+1>------ Rebuild All started: Project: FSharpSlowBuild, Configuration: Debug Any CPU ------
+Restored C:\Dev\OPENSOURCE\FSharpSlowBuild\src\FSharpSlowBuild\FSharpSlowBuild.fsproj (in 10 ms).
+Restored C:\Dev\OPENSOURCE\FSharpSlowBuild\src\FSharpSlowBuild.Tests\FSharpSlowBuild.Tests.fsproj (in 16 ms).
+1>  FSharpSlowBuild -> C:\Dev\OPENSOURCE\FSharpSlowBuild\src\FSharpSlowBuild\bin\Debug\net9.0\FSharpSlowBuild.dll
+1>  FSharpSlowBuild -> C:\Dev\OPENSOURCE\FSharpSlowBuild\src\FSharpSlowBuild\bin\Debug\net8.0\FSharpSlowBuild.dll
+1>  FSharpSlowBuild -> C:\Dev\OPENSOURCE\FSharpSlowBuild\src\FSharpSlowBuild\bin\Debug\net10.0\FSharpSlowBuild.dll
+2>------ Rebuild All started: Project: FSharpSlowBuild.Tests, Configuration: Debug Any CPU ------
+Build has been canceled.
+========== Elapsed 01:33.950 minutes ==========
+```
+
+
+## [2025-11-12] Visual Studio 2026 (both regular and Insiders, November 2025 initial release)
+
+I canceled the build after a minute.
+
+```
+Rebuild started at 7:35 AM...
+1>------ Rebuild All started: Project: FSharpSlowBuild, Configuration: Debug Any CPU ------
+Restored C:\Dev\OPENSOURCE\FSharpSlowBuild\src\FSharpSlowBuild\FSharpSlowBuild.fsproj (in 10 ms).
+Restored C:\Dev\OPENSOURCE\FSharpSlowBuild\src\FSharpSlowBuild.Tests\FSharpSlowBuild.Tests.fsproj (in 18 ms).
+1>  FSharpSlowBuild -> C:\Dev\OPENSOURCE\FSharpSlowBuild\src\FSharpSlowBuild\bin\Debug\net9.0\FSharpSlowBuild.dll
+1>  FSharpSlowBuild -> C:\Dev\OPENSOURCE\FSharpSlowBuild\src\FSharpSlowBuild\bin\Debug\net10.0\FSharpSlowBuild.dll
+1>  FSharpSlowBuild -> C:\Dev\OPENSOURCE\FSharpSlowBuild\src\FSharpSlowBuild\bin\Debug\net8.0\FSharpSlowBuild.dll
+2>------ Rebuild All started: Project: FSharpSlowBuild.Tests, Configuration: Debug Any CPU ------
+Build has been canceled.
+========== Elapsed 01:05.246 minutes ==========
+```
 
 ## Visual Studio 2022
 
@@ -47,21 +83,4 @@ Restore complete (0.6s)
 
 Test summary: total: 48, failed: 0, succeeded: 48, skipped: 0, duration: 1.0s
 Build succeeded in 4.8s
-```
-
-## Visual Studio 2026 (both regular and Insiders)
-
-I canceled the build after a minute.
-
-```
-Rebuild started at 7:35 AM...
-1>------ Rebuild All started: Project: FSharpSlowBuild, Configuration: Debug Any CPU ------
-Restored C:\Dev\OPENSOURCE\FSharpSlowBuild\src\FSharpSlowBuild\FSharpSlowBuild.fsproj (in 10 ms).
-Restored C:\Dev\OPENSOURCE\FSharpSlowBuild\src\FSharpSlowBuild.Tests\FSharpSlowBuild.Tests.fsproj (in 18 ms).
-1>  FSharpSlowBuild -> C:\Dev\OPENSOURCE\FSharpSlowBuild\src\FSharpSlowBuild\bin\Debug\net9.0\FSharpSlowBuild.dll
-1>  FSharpSlowBuild -> C:\Dev\OPENSOURCE\FSharpSlowBuild\src\FSharpSlowBuild\bin\Debug\net10.0\FSharpSlowBuild.dll
-1>  FSharpSlowBuild -> C:\Dev\OPENSOURCE\FSharpSlowBuild\src\FSharpSlowBuild\bin\Debug\net8.0\FSharpSlowBuild.dll
-2>------ Rebuild All started: Project: FSharpSlowBuild.Tests, Configuration: Debug Any CPU ------
-Build has been canceled.
-========== Elapsed 01:05.246 minutes ==========
 ```
