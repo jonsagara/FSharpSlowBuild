@@ -9,7 +9,7 @@ but not yet released.
 
 ## [2025-11-19] Visual Studio 2026 18.0.1 / Visual Studio 2026 Insiders 11218.70
 
-### `Visual F# Tools   18.0.0-rc2.25522.6+db81a081913bbaa32e528305723c07d98fd598b8`
+### `Visual F# Tools 18.0.0-rc2.25522.6+db81a081913bbaa32e528305723c07d98fd598b8`
 
 ```
 Rebuild started at 1:23 PM...
@@ -24,7 +24,7 @@ Build has been canceled.
 ========== Elapsed 01:33.950 minutes ==========
 ```
 
-### Visual F# Tools   18.0.0-alpha1.25509.2+4c68fe8482b988ef088f0968bed73810c4178fc3 -- WORKS!!!
+### `Visual F# Tools 18.0.0-alpha1.25509.2+4c68fe8482b988ef088f0968bed73810c4178fc3` -- WORKS!!!
 
 ```
 Rebuild started at 3:36 PM...
