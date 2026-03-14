@@ -1,5 +1,7 @@
 ﻿# F# slow build in Visual Studio 2026
 
+**[2026-03-14] This issue appears to be resolved, as I no longer experience slow builds in the most recent versions of VS 2026 (including Insiders)**
+
 When building my F# class library and unit tests in Visual Studio 2026 (both GA and Insiders), the build does not complete within a reasonable
 amount of time. I stop waiting after a minute.
 
